@@ -1,6 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Nav</title>
+<style>
+  /* Navbar container */
+  nav {
+    background-color: #1e293b; /* Dark blue/gray background */
+    padding: 15px 30px;         /* Bigger padding for size */
+    display: flex;
+    justify-content: center;    /* Center the links */
+    gap: 40px;                  /* Space between links */
+    border-radius: 8px;         /* Slightly rounded edges */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Navbar links */
+  nav a {
+    text-decoration: none;
+    color: #f8fafc;            /* Light color for contrast */
+    font-size: 18px;            /* Slightly bigger text */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 15px;          /* Bigger clickable area */
+    border-radius: 5px;         /* Rounded links for modern look */
+  }
+
+  /* Hover effect */
+  nav a:hover {
+    background-color: #2563eb;  /* Blue highlight on hover */
+    color: #ffffff;
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Active page styling */
+  nav a.active {
+    background-color: #3b82f6;
+    color: #ffffff;
+  }
+
+  /* Responsive adjustment */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
 <nav>
-<a href="index.html">Home</a>
-<a href="cv.html">CV</a>
-<a href="publications.html">Publications</a>
-<a href="gallery.html">Gallery</a>
+  <a href="index.html" class="active">Home</a>
+  <a href="cv.html">CV</a>
+  <a href="publications.html">Publications</a>
+  <a href="gallery.html">Gallery</a>
 </nav>
+
+</body>
+</html>
