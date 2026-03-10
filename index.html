@@ -3,62 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Professional Nav</title>
+<title>Portfolio</title>
 <style>
-  /* Navbar container */
-  nav {
-    background-color: #1e293b; /* Dark blue/gray background */
-    padding: 15px 30px;         /* Bigger padding for size */
-    display: flex;
-    justify-content: center;    /* Center the links */
-    gap: 40px;                  /* Space between links */
-    border-radius: 8px;         /* Slightly rounded edges */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #0d0d0d;
+    color: #f8f8c8;
   }
 
-  /* Navbar links */
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    gap: 30px;
+  }
+
   nav a {
     text-decoration: none;
-    color: #f8fafc;            /* Light color for contrast */
-    font-size: 18px;            /* Slightly bigger text */
-    font-weight: 500;
-    transition: all 0.3s ease;
-    padding: 8px 15px;          /* Bigger clickable area */
-    border-radius: 5px;         /* Rounded links for modern look */
+    color: #f8f8c8;
+    font-size: 18px;
+    transition: color 0.3s;
   }
 
-  /* Hover effect */
   nav a:hover {
-    background-color: #2563eb;  /* Blue highlight on hover */
-    color: #ffffff;
-    transform: translateY(-2px); /* Slight lift effect */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    color: #fefc7f;
   }
 
-  /* Active page styling */
-  nav a.active {
-    background-color: #3b82f6;
-    color: #ffffff;
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
   }
 
-  /* Responsive adjustment */
-  @media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-      gap: 20px;
-    }
+  .header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .header-text h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  .header-text em {
+    font-size: 16px;
+    color: #dcdcdc;
+  }
+
+  .header-text p {
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .header-text a {
+    color: #fefc7f;
+    text-decoration: underline;
+  }
+
+  /* Social links */
+  .social-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+  }
+
+  .social-links a {
+    color: #f8f8c8;
+    text-decoration: none;
+  }
+
+  .social-links a:hover {
+    color: #fefc7f;
+  }
+
+  hr {
+    margin: 40px auto;
+    border: 0.5px solid #555;
+    max-width: 900px;
   }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="active">Home</a>
+  <a href="index.html">Home</a>
   <a href="cv.html">CV</a>
   <a href="publications.html">Publications</a>
   <a href="gallery.html">Gallery</a>
 </nav>
+
+<div class="header">
+  <img src="0d9a6ef0-49f1-4565-9cd1-4e1de24a6301.png" alt="Profile Picture">
+  <div class="header-text">
+    <h1>Md. Iqbal Hossain Khan</h1>
+    <p>B.Sc Student, Rajshahi University of Engineering & Technology, Rajshahi<br>
+       Department Civil Engineering<br>
+       Email: <a href="2100001@student.ruet.ac.bd">2100001@student.ruet.ac.bd</a>, 
+              <a href="iqbal12101030khan@gmail.com">iqbal12101030khan@gmail.com</a>
+    </p>
+    <div class="social-links">
+      <a href="#" title="LinkedIn">&#xf08c;</a> <!-- LinkedIn icon unicode -->
+      <a href="#" title="GitHub">&#xf09b;</a>   <!-- GitHub icon unicode -->
+      <a href="cv.html" title="CV">CV</a>
+    </div>
+  </div>
+</div>
+
+<hr>
 
 </body>
 </html>
